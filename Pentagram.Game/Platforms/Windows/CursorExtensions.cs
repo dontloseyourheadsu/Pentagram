@@ -1,17 +1,17 @@
-﻿using Microsoft.Maui.Platform;
-using Microsoft.UI.Input;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml;
-using System.Reflection;
-using Windows.UI.Core;
+﻿namespace Pentagram.Game;
 
-namespace Pentagram.Game.Platforms.Windows;
+using System.Reflection;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Platform;
+using Microsoft.UI.Input;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Input;
+using Windows.UI.Core;
 
 public static class CursorExtensions
 {
     public static void SetCustomCursor(this VisualElement visualElement, CursorIcon cursor, IMauiContext? mauiContext)
     {
-        ArgumentNullException.ThrowIfNull(mauiContext);
         UIElement view = visualElement.ToPlatform(mauiContext);
         view.PointerEntered += ViewOnPointerEntered;
         view.PointerExited += ViewOnPointerExited;
@@ -46,4 +46,3 @@ public static class CursorExtensions
         };
     }
 }
-

@@ -1,8 +1,9 @@
-﻿using Microsoft.Maui.Controls.Shapes;
+﻿using Microsoft.Maui.Controls.Compatibility.Platform.iOS;
+using Microsoft.Maui.Controls.Shapes;
 using Microsoft.Maui.Platform;
 using UIKit;
 
-namespace Pentagram.Game.Platforms.iOS;
+namespace Pentagram.Game;
 public static class CursorExtensions
 {
     public static void SetCustomCursor(this VisualElement visualElement, CursorIcon cursor, IMauiContext? mauiContext)

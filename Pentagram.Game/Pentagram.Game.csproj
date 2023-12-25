@@ -68,4 +68,10 @@
         <PackageReference Include="Microsoft.Maui.Controls.Core" Version="8.0.3" />
     </ItemGroup>
 
+    <ItemGroup>
+      <MauiXaml Update="AppShell.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </MauiXaml>
+    </ItemGroup>
+
 </Project>

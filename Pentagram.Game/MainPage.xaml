@@ -1,7 +1,8 @@
 ﻿<ContentPage
     x:Class="Pentagram.Game.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pentagramGame="clr-namespace:Pentagram.Game">
 
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <Grid.Background>
@@ -24,6 +25,7 @@
                 HorizontalTextAlignment="Center"
                 Text="Pentagram" />
             <Button
+                pentagramGame:CursorBehavior.Cursor="Hand"
                 BackgroundColor="#0C0C0C"
                 BorderWidth="4"
                 Clicked="PlayButton_Clicked"

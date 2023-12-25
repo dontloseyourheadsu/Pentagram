@@ -1,6 +1,4 @@
-﻿using Pentagram.Game.Platforms.Windows;
-
-namespace Pentagram.Game;
+﻿namespace Pentagram.Game;
 
 public partial class MainPage
 {
@@ -27,7 +25,7 @@ public partial class MainPage
     private void OnPointerEntered(object? sender, PointerEventArgs e)
     {
         var button = (Button)sender!;
-        button.SetCustomCursor(CursorIcon.Hand, Application.Current?.MainPage?.Handler?.MauiContext);
+        button.SetCustomCursor(CursorIcon.Wait, button.Handler?.MauiContext);
     }
 
     private void OnPointerExited(object? sender, PointerEventArgs e)

@@ -1,10 +1,8 @@
-﻿using Pentagram.Game.Platforms.Windows;
-
-namespace Pentagram.Game
+﻿namespace Pentagram.Game
 {
-    public class CursorBehaviour
+    public class CursorBehavior
     {
-        public static readonly BindableProperty CursorProperty = BindableProperty.CreateAttached("Cursor", typeof(CursorIcon), typeof(CursorBehaviour), CursorIcon.Arrow, propertyChanged: CursorChanged);
+        public static readonly BindableProperty CursorProperty = BindableProperty.CreateAttached("Cursor", typeof(CursorIcon), typeof(CursorBehavior), CursorIcon.Arrow, propertyChanged: CursorChanged);
 
         private static void CursorChanged(BindableObject bindable, object oldvalue, object newvalue)
         {
@@ -18,5 +16,6 @@ namespace Pentagram.Game
 
         public static void SetCursor(BindableObject view, CursorIcon value) => view.SetValue(CursorProperty, value);
     }
+
 
 }

@@ -2,7 +2,7 @@
 using Microsoft.Maui.Platform;
 using Application = Android.App.Application;
 
-namespace Pentagram.Game.Platforms.Android;
+namespace Pentagram.Game;
 
 public static class CursorExtensions
 {

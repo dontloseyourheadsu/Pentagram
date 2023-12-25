@@ -2,7 +2,7 @@
 using Microsoft.Maui.Platform;
 using UIKit;
 
-namespace Pentagram.Game.Platforms.MacCatalyst;
+namespace Pentagram.Game;
 
 public static class CursorExtensions
 {
