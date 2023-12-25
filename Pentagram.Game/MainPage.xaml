@@ -35,9 +35,6 @@
                 Text="Play"
                 TextColor="White"
                 WidthRequest="100">
-                <Button.GestureRecognizers>
-                    <PointerGestureRecognizer PointerEntered="OnPointerEntered" PointerExited="OnPointerExited" />
-                </Button.GestureRecognizers>
                 <VisualStateManager.VisualStateGroups>
                     <VisualStateGroup x:Name="CommonStates">
                         <VisualState x:Name="Normal">
@@ -55,6 +52,7 @@
             </Button>
             <Button
                 Margin="0,15,0,15"
+                pentagramGame:CursorBehavior.Cursor="Hand"
                 BackgroundColor="#0C0C0C"
                 BorderWidth="4"
                 Clicked="SettingsButton_Clicked"
@@ -80,6 +78,7 @@
                 </VisualStateManager.VisualStateGroups>
             </Button>
             <Button
+                pentagramGame:CursorBehavior.Cursor="Hand"
                 BackgroundColor="#0C0C0C"
                 BorderWidth="4"
                 Clicked="ExitButton_Clicked"

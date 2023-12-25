@@ -21,18 +21,4 @@ public partial class MainPage
     {
         Application.Current?.Quit();
     }
-
-    private void OnPointerEntered(object? sender, PointerEventArgs e)
-    {
-        var button = (Button)sender!;
-        button.SetCustomCursor(CursorIcon.Wait, button.Handler?.MauiContext);
-    }
-
-    private void OnPointerExited(object? sender, PointerEventArgs e)
-    {
-        var button = (Button)sender!;
-        button.SetCustomCursor(CursorIcon.Arrow, Application.Current?.MainPage?.Handler?.MauiContext);
-    }
-
-
 }
