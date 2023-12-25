@@ -1,15 +1,110 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<ContentPage
+    x:Class="Pentagram.Game.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pentagramGame="clr-namespace:Pentagram.Game">
 
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:Class="Pentagram.Game.MainPage"
-             Title="MediaElement Getting Started">
-    
-    <VerticalStackLayout Spacing="25" Padding="30">
-        <!-- Define the Button -->
-        <Button x:Name="RotateButton"
-                Text="Rotate Me"
-                Clicked="OnRotateButtonClicked"/>
-    </VerticalStackLayout>
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                <GradientStop Offset="1" Color="#433849" />
+                <GradientStop Offset="0" Color="#0B070E" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Image
+                Aspect="AspectFit"
+                MaximumHeightRequest="250"
+                MinimumHeightRequest="100"
+                Source="logo.png" />
+            <Label
+                Margin="0,20,0,20"
+                FontFamily="BebasNeueRegular"
+                FontSize="Header"
+                HorizontalTextAlignment="Center"
+                Text="Pentagram" />
+            <Button
+                pentagramGame:CursorBehavior.Cursor="Hand"
+                BackgroundColor="#0C0C0C"
+                BorderWidth="4"
+                Clicked="PlayButton_Clicked"
+                FontFamily="OdibeeSansRegular"
+                FontSize="Medium"
+                HeightRequest="55"
+                Text="Play"
+                TextColor="White"
+                WidthRequest="100">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="BorderColor" Value="#554669" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="PointerOver">
+                            <VisualState.Setters>
+                                <Setter Property="BorderColor" Value="#9C80C1" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </Button>
+            <Button
+                Margin="0,15,0,15"
+                pentagramGame:CursorBehavior.Cursor="Hand"
+                BackgroundColor="#0C0C0C"
+                BorderWidth="4"
+                Clicked="SettingsButton_Clicked"
+                FontFamily="OdibeeSansRegular"
+                FontSize="Medium"
+                HeightRequest="55"
+                Text="Settings"
+                TextColor="White"
+                WidthRequest="100">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="BorderColor" Value="#554669" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="PointerOver">
+                            <VisualState.Setters>
+                                <Setter Property="BorderColor" Value="#9C80C1" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </Button>
+            <Button
+                pentagramGame:CursorBehavior.Cursor="Hand"
+                BackgroundColor="#0C0C0C"
+                BorderWidth="4"
+                Clicked="ExitButton_Clicked"
+                FontFamily="OdibeeSansRegular"
+                FontSize="Medium"
+                HeightRequest="55"
+                Text="Exit"
+                TextColor="White"
+                WidthRequest="100">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="BorderColor" Value="#554669" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="PointerOver">
+                            <VisualState.Setters>
+                                <Setter Property="BorderColor" Value="#9C80C1" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </Button>
+
+        </StackLayout>
+    </Grid>
+
 </ContentPage>
