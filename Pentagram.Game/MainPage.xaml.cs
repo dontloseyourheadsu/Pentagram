@@ -1,4 +1,6 @@
-﻿namespace Pentagram.Game;
+﻿using Pentagram.Game.Platforms.Windows;
+
+namespace Pentagram.Game;
 
 public partial class MainPage
 {
@@ -6,7 +8,7 @@ public partial class MainPage
     {
         InitializeComponent();
     }
-    
+
     private void PlayButton_Clicked(object sender, EventArgs e)
     {
         Navigation.PushAsync(new PlayMenuPage());
@@ -21,4 +23,18 @@ public partial class MainPage
     {
         Application.Current?.Quit();
     }
+
+    private void OnPointerEntered(object? sender, PointerEventArgs e)
+    {
+        var button = (Button)sender!;
+        button.SetCustomCursor(CursorIcon.Hand, Application.Current?.MainPage?.Handler?.MauiContext);
+    }
+
+    private void OnPointerExited(object? sender, PointerEventArgs e)
+    {
+        var button = (Button)sender!;
+        button.SetCustomCursor(CursorIcon.Arrow, Application.Current?.MainPage?.Handler?.MauiContext);
+    }
+
+
 }
