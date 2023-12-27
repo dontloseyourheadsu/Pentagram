@@ -2,7 +2,8 @@
     x:Class="Pentagram.Game.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:pentagramGame="clr-namespace:Pentagram.Game">
+    xmlns:pentagramGame="clr-namespace:Pentagram.Game"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
 
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <Grid.Background>
@@ -11,6 +12,13 @@
                 <GradientStop Offset="0" Color="#0B070E" />
             </LinearGradientBrush>
         </Grid.Background>
+
+        <toolkit:MediaElement
+            x:Name="mediaElement"
+            ShouldAutoPlay="True"
+            ShouldLoopPlayback="True"
+            ShouldShowPlaybackControls="False"
+            Source="embed://Tracks/forestwalk.mp3" />
 
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
             <Image
