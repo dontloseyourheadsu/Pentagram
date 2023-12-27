@@ -1,9 +1,9 @@
 # Pentagram
 
-World:
+## World
 In Etheria, different species and kingdoms  were formed on the magic element they use. Sometimes special magicians appear which have better abilities than the ones in the kingdom or are born with special magic, named unique magicians. Magical element is hereditary but the power is related to the talent and training of each individual. There, Etherical Demons exist, they are animals with the capacity to use magic, some of them have the capacity to talk and have began to create their kingdom. A conflict to recognize their kingdom and tell they are not a threat has began between nations.
 
-List of characters:
+## List of characters
 - Kaori
 - Haruhi
 - Masaki
@@ -16,7 +16,7 @@ List of characters:
 - Vauna
 - Vedas
 
-Elements:
+## Elements
 - **Aether**: The pure essence that binds and permeates all magic, associated with rare and powerful magic. Users might have abilities related to manipulating the fundamental forces of the universe.
 - **Luminar**: An element focused on light and radiance, offering powers of illumination, blinding, and energy beams. It could symbolize truth and clarity.
 - **Umbran**: A shadowy, mysterious element granting abilities like invisibility, dark energy manipulation, and creating illusions or fears.
@@ -30,7 +30,7 @@ Elements:
 - **Glacian**: Mastery over the frigid elements, wielding the power to conjure ice and snow, manipulate cold temperatures, and create chillingly intricate ice constructs. Tiela's abilities might include freezing targets, crafting weapons or barriers of ice, and perhaps even influencing weather patterns to bring about snowfall or icy conditions.
 - **Null**: Unavailable magic
 
-Magic characters:
+## Magic characters
 1. **Kaori**: **Luminar** - Abilities related to light and radiance.
 2. **Haruhi**: **Zephyr** - Powers of air and wind manipulation.
 3. **Masaki**: **Pyron** - Control over fire and heat.
@@ -42,7 +42,7 @@ Magic characters:
 9. **Vauna**: **Floria** - Nature and life magic, control over plants and healing.
 10. **Vedas**: **Chronos** - Time-based magic, temporal manipulation.
 
-Character Stories in Etheria
+## Character Stories in Etheria
 
 1. **Kaori (Luminar, Lumina)**
    - Story: Born under the radiant skies of Lumina, Kaori developed an innate connection with light. Known for her luminous presence and the ability to illuminate even the darkest corners, she is a beacon of hope and clarity in her kingdom.
@@ -104,7 +104,7 @@ Kingdoms:
      - Vauna (Floria) 
      - Raunman (Null Magic, finding solace in the natural balance of Florania, away from the complexities of magical politics)
 
-Etherical Demons:
+## Etherical Demons
 1. **Flame Wyverns**
    - Characteristics: Dragon-like creatures with fire-breathing abilities and high heat resistance. Territorial and often found in volcanic regions.
 
@@ -129,7 +129,7 @@ Etherical Demons:
 8. **Bloom Dryads**
    - Characteristics: Plant-like entities that can control flora and heal. Deeply connected to their natural surroundings, usually peaceful unless provoked.
 
-Kingdom Stances Towards Etherical Demons
+## Kingdom Stances Towards Etherical Demons
 
 | Kingdom     | Stance Towards Demons |
 |-------------|-----------------------|
@@ -140,7 +140,7 @@ Kingdom Stances Towards Etherical Demons
 | Glacia      | Favor                 |
 | Florania    | Favor                 |
 
-Inter-Kingdom Relations Matrix
+## Inter-Kingdom Relations Matrix
 
 |            | Lumina | Zephyria | Pyronia | Terrania | Glacia | Florania |
 |------------|--------|----------|---------|----------|--------|----------|
