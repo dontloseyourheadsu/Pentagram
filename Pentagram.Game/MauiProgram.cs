@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Maui;
+using Pentagram.Game.Services;
 using Microsoft.Extensions.Logging;
 
 namespace Pentagram.Game;
@@ -18,6 +19,7 @@ public static class MauiProgram
                 fonts.AddFont("BebasNeue-Regular.ttf", "BebasNeueRegular");
                 fonts.AddFont("OdibeeSans-Regular.ttf", "OdibeeSansRegular");
             });
+        //builder.Services.AddSingleton<IMusicPlayer, MusicPlayer>();
 
 #if DEBUG
         builder.Logging.AddDebug();
