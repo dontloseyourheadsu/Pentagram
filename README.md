@@ -3,6 +3,8 @@
 ## World
 In Etheria, different species and kingdoms  were formed on the magic element they use. Sometimes special magicians appear which have better abilities than the ones in the kingdom or are born with special magic, named unique magicians. Magical element is hereditary but the power is related to the talent and training of each individual. There, Etherical Demons exist, they are animals with the capacity to use magic, some of them have the capacity to talk and have began to create their kingdom. A conflict to recognize their kingdom and tell they are not a threat has began between nations.
 
+![Mapa de fantasía de Etheria](mapa.jpg)
+
 ## List of characters
 - Kaori
 - Haruhi
